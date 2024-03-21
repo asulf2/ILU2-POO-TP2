@@ -7,10 +7,13 @@ public class ControlVerifierIdentite {
 
 	public ControlVerifierIdentite(Village village) {
 		this.village = village;
+		//constructeur
 	}
 
 	public boolean verifierIdentite(String nomVendeur) {
-		//TODO a completer, attention le retour ne dit pas etre false :-)
-		return false;
+		return village.trouverHabitant(nomVendeur)!= null;
+		
 	}
+	
+	
 }
